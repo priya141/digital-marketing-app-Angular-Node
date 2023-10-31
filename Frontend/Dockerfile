@@ -5,7 +5,7 @@ FROM node:14 as build
 WORKDIR /usr/src/app
 
 # Copy package.json and package-lock.json to the working directory
-COPY package*.json ./
+COPY frontend/package*.json ./
 
 # Install Angular CLI globally
 RUN npm install -g @angular/cli
@@ -14,7 +14,7 @@ RUN npm install -g @angular/cli
 RUN npm install
 
 # Copy the rest of the application code
-COPY . .
+COPY frontend ./
 
 # Build the Angular app
 RUN ng build --prod
