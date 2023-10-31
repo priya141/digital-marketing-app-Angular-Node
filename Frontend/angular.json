@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "digital-marketing-app": {
+      // ...
+      "architect": {
+        "build": {
+          "options": {
+            "outputPath": "dist/digital-marketing-app"
+            // ...
+          }
+          // ...
+        }
+      }
+      // ...
+    }
+    // ...
+  }
+  // ...
+}
